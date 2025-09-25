@@ -1,0 +1,98 @@
+body {
+    background: url('Forest.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+
+    font-family: "Averia Libre", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sprite {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(0.8); }
+  50%  { transform: scale(1.25); }
+  100% { transform: scale(0.8); }
+}
+
+#one {
+    top: 30%;
+    left: 24%;
+    animation-delay: 0s;
+}
+
+#two {
+    top: 75%; 
+    left: 5%;
+    animation-delay: 0.5s;
+}
+
+#three {
+    top: 20%;
+    left: 65%;
+    animation-delay: 1s;
+}
+
+#four {
+    top: 40%; 
+    left: 82%;
+    animation-delay: 1.25s;
+}
+
+#five {
+    top: 15%;
+    left: 2%;
+    animation-delay: 1.7s;
+}
+
+#chara-scene {
+    position: absolute;
+    top: 70%;
+    left: 20%;               
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    justify-content: center;
+}
+
+#character {
+    width: 400px;    
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#speech-bubble {
+    background: rgba(235, 234, 225, 0.5);
+    border-radius: 20px;
+    padding: 15px 20px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    position: relative;
+    left: 170px; 
+}
+
+#speech-bubble p {
+    margin: 0 0 10px 0;
+}
+
+#close-bubble {
+    align-self: flex-end;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-family: "Averia Libre", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
